@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ NÃO REMOVER: mantém esta página fora da busca e separada do SEO do domínio ═══ -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="googlebot" content="noindex, nofollow">
+<title>Motorista no Lucro | Pacote Finanças para Motorista de Aplicativo</title>
+<meta name="description" content="Planilha profissional + 7 guias práticos para motorista de Uber, 99 e inDrive: comprovar renda, limpar o nome, calcular lucro real, INSS, Imposto de Renda e financiamento pelo Move Brasil.">
+
+<!-- ═══ SUBSTITUA PELO PIXEL / SCRIPT DE RASTREAMENTO, SE USAR ═══ -->
+
+<style>
+  :root{
+    --navy:#1F4E79; --navy-deep:#16385A; --blue:#2E75B6;
+    --amber:#FFC24B; --cta:#E8590C; --cta-hover:#C94B06;
+    --green:#2E7D32; --red:#C62828;
+    --ink:#15202B; --muted:#5A6875; --line:#DFE6ED;
+    --paper:#FFFFFF; --wash:#F5F8FB;
+    --max:760px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+    color:var(--ink); line-height:1.62; background:var(--paper);
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
+  section{padding:52px 0}
+  section.wash{background:var(--wash);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+  h2{font-size:clamp(21px,4.4vw,27px);line-height:1.26;color:var(--navy);margin-bottom:16px;letter-spacing:-.015em}
+  h3{font-size:17px;color:var(--navy);margin:22px 0 8px}
+  p{margin-bottom:14px;color:var(--muted);font-size:16.5px}
+  p.lead{color:var(--ink);font-size:17.5px}
+  strong{color:var(--ink)}
+
+  /* ── HERO ── */
+  .hero{
+    background:linear-gradient(158deg,var(--navy-deep) 0%,var(--navy) 55%,#255F92 100%);
+    color:#fff;padding:46px 0 52px;text-align:center;
+  }
+  .hero .eyebrow{
+    display:inline-block;background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.28);padding:7px 17px;border-radius:100px;
+    font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:20px;font-weight:600;
+  }
+  .hero h1{
+    font-size:clamp(25px,5.6vw,35px);line-height:1.2;font-weight:800;
+    margin-bottom:16px;letter-spacing:-.022em;
+  }
+  .hero h1 em{color:var(--amber);font-style:normal}
+  .hero .sub{font-size:17px;opacity:.93;max-width:560px;margin:0 auto 30px;line-height:1.55}
+
+  /* ── SIGNATURE: a conta dos 60% ── */
+  .maths{
+    background:rgba(0,0,0,.19);border:1px solid rgba(255,255,255,.16);
+    border-radius:14px;padding:22px 20px;max-width:520px;margin:0 auto 30px;
+  }
+  .maths .cap{font-size:12px;letter-spacing:.07em;text-transform:uppercase;opacity:.72;margin-bottom:14px}
+  .maths .row{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap}
+  .maths .cell{text-align:center;min-width:96px}
+  .maths .num{font-size:22px;font-weight:800;color:var(--amber);line-height:1.15}
+  .maths .lbl{font-size:11.5px;opacity:.8;line-height:1.35;margin-top:3px}
+  .maths .op{font-size:19px;opacity:.55;font-weight:300}
+  .maths .foot{font-size:13px;opacity:.85;margin-top:15px;line-height:1.5;
+    border-top:1px solid rgba(255,255,255,.14);padding-top:13px}
+
+  /* ── PREÇO ── */
+  .pricebox{
+    background:#fff;color:var(--ink);border-radius:16px;padding:22px 26px;
+    max-width:340px;margin:0 auto 22px;box-shadow:0 14px 44px rgba(0,0,0,.28);
+  }
+  .pricebox .was{text-decoration:line-through;color:#98A4B0;font-size:14.5px}
+  .pricebox .now{font-size:44px;font-weight:800;color:var(--green);line-height:1.05;letter-spacing:-.03em}
+  .pricebox .now small{font-size:19px;font-weight:600;vertical-align:super}
+  .pricebox .terms{font-size:13.5px;color:var(--muted);margin-top:6px}
+
+  .cta{
+    display:inline-block;background:var(--cta);color:#fff;font-size:17.5px;font-weight:700;
+    padding:17px 38px;border-radius:100px;text-decoration:none;
+    box-shadow:0 6px 22px rgba(232,89,12,.42);
+    transition:transform .15s ease,box-shadow .15s ease,background .15s ease;
+  }
+  .cta:hover,.cta:focus-visible{background:var(--cta-hover);transform:translateY(-2px);box-shadow:0 10px 28px rgba(232,89,12,.5)}
+  .cta:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+  .cta-note{font-size:13px;opacity:.86;margin-top:13px}
+
+  /* ── DOR ── */
+  .pains{list-style:none;margin:22px 0}
+  .pains li{
+    background:#fff;border:1px solid var(--line);border-left:4px solid var(--red);
+    padding:14px 18px;margin-bottom:10px;border-radius:0 10px 10px 0;
+    font-size:15.5px;color:var(--ink);
+  }
+  .pains li b{color:var(--red)}
+
+  /* ── ENTREGÁVEIS ── */
+  .kit{border:1px solid var(--line);border-radius:14px;overflow:hidden;margin:24px 0;background:#fff}
+  .kit-item{display:flex;gap:15px;padding:17px 18px;border-bottom:1px solid var(--line);align-items:flex-start}
+  .kit-item:last-child{border-bottom:none}
+  .kit-item .tag{
+    flex-shrink:0;width:46px;height:46px;border-radius:10px;background:var(--navy);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;
+    letter-spacing:.03em;text-align:center;line-height:1.2;
+  }
+  .kit-item.sheet .tag{background:var(--green)}
+  .kit-item h4{font-size:16px;color:var(--navy);margin-bottom:3px;line-height:1.35}
+  .kit-item p{font-size:14.5px;margin:0;line-height:1.5}
+
+  /* ── CHECKS ── */
+  .checks{list-style:none;margin:18px 0}
+  .checks li{padding:11px 0 11px 34px;position:relative;font-size:16px;color:var(--ink);border-bottom:1px solid var(--line)}
+  .checks li:last-child{border-bottom:none}
+  .checks li::before{
+    content:"";position:absolute;left:0;top:16px;width:21px;height:21px;border-radius:50%;
+    background:var(--green) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") center/12px no-repeat;
+  }
+
+  /* ── FAQ ── */
+  details{background:#fff;border:1px solid var(--line);border-radius:11px;margin-bottom:11px;overflow:hidden}
+  details[open]{border-color:var(--blue)}
+  summary{
+    padding:16px 18px;font-weight:700;color:var(--navy);font-size:15.5px;cursor:pointer;
+    list-style:none;display:flex;justify-content:space-between;gap:12px;align-items:center;
+  }
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";font-size:22px;font-weight:400;color:var(--blue);flex-shrink:0;line-height:1}
+  details[open] summary::after{content:"−"}
+  summary:focus-visible{outline:3px solid var(--blue);outline-offset:-3px}
+  details .body{padding:0 18px 17px;font-size:15px;color:var(--muted);line-height:1.6}
+
+  /* ── OFERTA ── */
+  .offer{background:linear-gradient(158deg,var(--navy-deep),var(--navy));color:#fff;padding:54px 0;text-align:center}
+  .offer h2{color:#fff}
+  .offer .intro{color:rgba(255,255,255,.9);max-width:500px;margin:0 auto 10px;font-size:16.5px}
+  .manifest{text-align:left;max-width:430px;margin:22px auto;font-size:15px;list-style:none}
+  .manifest li{margin-bottom:9px;padding-left:24px;position:relative;line-height:1.5}
+  .manifest li::before{content:"→";position:absolute;left:0;color:var(--amber);font-weight:700}
+
+  /* ── GARANTIA ── */
+  .guarantee{
+    background:#EDF7EE;border:2px solid var(--green);border-radius:16px;
+    padding:28px 26px;text-align:center;margin:30px 0;
+  }
+  .guarantee h3{color:var(--green);margin-top:0;font-size:19px}
+  .guarantee p{color:var(--ink);margin:0;font-size:15.5px}
+
+  /* ── FOOTER ── */
+  footer{background:#101820;color:#8C99A6;padding:34px 0 40px;font-size:13px;line-height:1.65}
+  footer .brand{color:#DCE4EC;font-weight:700;font-size:15px;margin-bottom:12px}
+  footer a{color:#9FC4E8;text-decoration:underline}
+  footer .legal{margin-top:16px;padding-top:16px;border-top:1px solid #232E39;font-size:11.5px;color:#6E7A87}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+  }
+  @media (max-width:520px){
+    section{padding:40px 0}
+    .maths .row{gap:8px}
+    .maths .cell{min-width:78px}
+    .maths .num{font-size:18px}
+    .cta{font-size:16px;padding:15px 26px;width:100%}
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════ HERO ══════════ -->
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Motorista no Lucro · Uber · 99 · inDrive</div>
+    <h1>Você fatura bem e o banco continua dizendo<br><em>“renda não comprovada”.</em></h1>
+    <p class="sub">
+      O problema quase nunca é quanto você ganha. É que ninguém nunca te mostrou como
+      organizar, calcular e apresentar essa renda do jeito que o sistema entende.
+    </p>
+
+    <!-- assinatura da página: a conta que quase nenhum motorista conhece -->
+    <div class="maths">
+      <div class="cap">A regra que muda a sua conta em 2026</div>
+      <div class="row">
+        <div class="cell">
+          <div class="num">60%</div>
+          <div class="lbl">do que você recebe<br>é tributável</div>
+        </div>
+        <div class="op">+</div>
+        <div class="cell">
+          <div class="num">R$ 5.000</div>
+          <div class="lbl">de isenção<br>mensal em 2026</div>
+        </div>
+        <div class="op">=</div>
+        <div class="cell">
+          <div class="num">R$ 8.333</div>
+          <div class="lbl">de ganho bruto<br>sem imposto a pagar</div>
+        </div>
+      </div>
+      <div class="foot">
+        Transporte de passageiros tem regra própria na Lei 7.713/88. Combinada com a
+        isenção da Lei 15.270/2025, ela muda o cálculo de quase todo motorista — e
+        quase ninguém aplica. É uma das sete frentes que o pacote organiza.
+      </div>
+    </div>
+
+    <div class="pricebox">
+      <div class="was">De R$ 147,00</div>
+      <div class="now"><small>R$</small>69,90</div>
+      <div class="terms">à vista no Pix ou parcelado no cartão</div>
+    </div>
+
+    <a href="https://pay.kiwify.com.br/V6TpzGD" class="cta">Quero organizar minha renda</a>
+    <div class="cta-note">Acesso imediato · Planilha + 7 guias em PDF · Garantia de 7 dias</div>
+  </div>
+</header>
+
+<!-- ══════════ DOR ══════════ -->
+<section>
+  <div class="wrap">
+    <h2>Doze horas por dia no volante, e no papel você não existe.</h2>
+    <p class="lead">Se você roda de aplicativo, provavelmente já viveu isso:</p>
+    <ul class="pains">
+      <li><b>Pediu crédito</b> e ouviu “renda não comprovada” mesmo faturando bem todo mês.</li>
+      <li><b>Nome sujo ou score travado</b> bloqueando qualquer empréstimo, cartão ou financiamento.</li>
+      <li><b>Não sabe quanto sobra de verdade</b> depois de combustível, manutenção e desgaste do carro.</li>
+      <li><b>Nunca pagou INSS</b> — e sabe que um mês parado por doença viraria uma crise imediata.</li>
+      <li><b>Nunca declarou nada</b> e tem receio do que acontece se um dia precisar justificar uma compra.</li>
+      <li><b>Viu falar do Move Brasil</b>, não entendeu as regras e ficou de fora.</li>
+    </ul>
+    <p>
+      Nenhum desses problemas é sobre esforço. Todos são sobre <strong>organização e informação</strong> —
+      e é exatamente isso que o pacote entrega, pronto para usar.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ O QUE VOCÊ RECEBE ══════════ -->
+<section class="wash">
+  <div class="wrap">
+    <h2>O que você recebe</h2>
+    <p class="lead">Uma planilha de trabalho e sete guias, cada um resolvendo uma frente específica.</p>
+
+    <div class="kit">
+      <div class="kit-item sheet">
+        <div class="tag">XLSX</div>
+        <div>
+          <h4>Planilha de Controle Financeiro</h4>
+          <p>Controla o <strong>ano inteiro</strong> em um arquivo só. Você lança o dia a dia,
+             escolhe o mês no painel e vê lucro real, margem, custo por km e ganho por hora.
+             O resumo anual, a apuração do Imposto de Renda e o relatório de 6 meses para o banco
+             se montam sozinhos. Célula amarela você preenche, o resto calcula.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>01</div>
+        <div>
+          <h4>Como Comprovar Renda e Conseguir Crédito</h4>
+          <p>Os quatro pontos que a análise de crédito realmente olha, o pacote de documentos completo,
+             como exportar o relatório de cada app, a regra da conta única e o texto pronto para apresentar o pedido.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>02</div>
+        <div>
+          <h4>Limpa Nome e Sobe Score de Verdade</h4>
+          <p>As quatro consultas que revelam tudo o que está no seu CPF, o passo a passo da negociação,
+             a rotina de 90 dias que constrói histórico e o que fazer quando a dívida é maior que a renda.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>03</div>
+        <div>
+          <h4>Lucro Real e Como Usar Crédito sem se Ferrar</h4>
+          <p>Todos os custos que precisam entrar na conta — inclusive depreciação, o mais esquecido —
+             as metas de saúde financeira, a regra dos 20% da parcela e o teste do pior mês.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>04</div>
+        <div>
+          <h4>Mapa para Sair da Negativação</h4>
+          <p>Textos prontos para copiar e colar no consumidor.gov.br: pedido de demonstrativo,
+             proposta de quitação à vista e cobrança de baixa da restrição. Mais o caminho da
+             Lei do Superendividamento quando a conta não fecha.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>05</div>
+        <div>
+          <h4>Move Brasil — Financiamento de Carro</h4>
+          <p>O programa federal com juros subsidiados: quem é elegível, os critérios de tempo de
+             cadastro e corridas, como aderir pelo gov.br e o que exigir do banco antes de assinar.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>06</div>
+        <div>
+          <h4>INSS, Direitos e Aposentadoria</h4>
+          <p>Os valores de 2026 dos três caminhos possíveis, a consequência de contribuir com 5% ou 11%
+             que ninguém explica na hora, e o limite de faturamento do MEI que derruba quem fatura bem.</p>
+        </div>
+      </div>
+      <div class="kit-item">
+        <div class="tag">GUIA<br>07</div>
+        <div>
+          <h4>Imposto de Renda e Investimentos</h4>
+          <p>A regra dos 60%, a isenção de 2026, como funciona o carnê-leão mês a mês e a armadilha
+             do rendimento isento que leva motorista para a malha fina na hora de comprar um carro.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARA QUEM É ══════════ -->
+<section>
+  <div class="wrap">
+    <h2>Feito para você se</h2>
+    <ul class="checks">
+      <li>Roda de Uber, 99, inDrive ou similar e quer parar de ser recusado</li>
+      <li>Já ouviu “renda não comprovada” e não sabe o que fazer diferente</li>
+      <li>Tem restrição no nome e precisa de uma ordem clara de execução</li>
+      <li>Não sabe quanto sobra de verdade depois de todos os custos</li>
+      <li>Quer se formalizar mas não sabe se MEI compensa no seu faturamento</li>
+      <li>Está de olho no Move Brasil e quer chegar preparado no banco</li>
+      <li>Está disposto a preencher a planilha e executar — não é mágica, é método</li>
+    </ul>
+
+    <h3>Não é para você se</h3>
+    <p>
+      Você procura alguém que “limpe seu nome” por fora, alguma manobra para enganar análise de
+      crédito, ou uma garantia de aprovação. Nada disso existe, e o pacote não promete nada disso.
+      O que ele faz é te colocar na melhor posição possível — e essa posição depende de você executar.
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="wash">
+  <div class="wrap">
+    <h2>Perguntas frequentes</h2>
+
+    <details>
+      <summary>Já tentei de tudo e nunca consegui. Vai ser diferente?</summary>
+      <div class="body">
+        A maioria tenta na ordem errada: manda um mês bom, mistura conta pessoal, pede em cinco bancos
+        na mesma semana e não tem relatório oficial dos apps. O pacote mostra o que a análise realmente
+        avalia e em que sequência resolver cada coisa. Não garante aprovação — nenhum material honesto
+        garante — mas elimina os erros que causam a maior parte das recusas.
+      </div>
+    </details>
+
+    <details>
+      <summary>Tenho nome sujo. Ainda serve?</summary>
+      <div class="body">
+        Serve, e provavelmente é onde você mais vai usar: dois guias inteiros tratam disso, com os textos
+        prontos para negociar por escrito e o caminho da Lei do Superendividamento para quando a soma das
+        dívidas não cabe na renda.
+      </div>
+    </details>
+
+    <details>
+      <summary>Não entendo de planilha. Vou conseguir usar?</summary>
+      <div class="body">
+        Foi feita pensando nisso. Célula amarela é onde você digita, laranja é onde você escolhe
+        na listinha, azul calcula sozinha. Você lança a data e o valor — a planilha descobre o mês
+        e organiza o resto. Tem aba de instruções, e cada linha de custo traz ao lado como calcular
+        aquele valor. Abre no Excel, no Google Planilhas e no LibreOffice.
+      </div>
+    </details>
+
+    <details>
+      <summary>Por que não achar isso de graça no YouTube?</summary>
+      <div class="body">
+        Boa parte está em algum lugar, sim — espalhada, desatualizada e misturada com informação errada.
+        A regra dos 60% do transporte de passageiros, por exemplo, existe desde 1988 e a maioria dos
+        motoristas nunca ouviu falar. Aqui está reunido, atualizado para 2026 e organizado na ordem
+        de execução, com planilha e textos prontos.
+      </div>
+    </details>
+
+    <details>
+      <summary>Isso substitui um contador?</summary>
+      <div class="body">
+        Não, e o material diz isso com todas as letras. É material informativo e educacional. Ele te faz
+        chegar no contador sabendo o que perguntar, com os números já organizados — o que costuma sair
+        mais barato do que chegar com uma sacola de notas fiscais.
+      </div>
+    </details>
+
+    <details>
+      <summary>As informações estão atualizadas?</summary>
+      <div class="body">
+        O material é da versão de agosto de 2026 e traz os valores vigentes: salário mínimo, alíquotas e
+        códigos do INSS, limite do MEI, regras do Move Brasil e a isenção do Imposto de Renda de 2026.
+        Cada guia indica a fonte oficial para você conferir, porque essas regras mudam e nenhum PDF
+        substitui a consulta no canal do governo na hora da decisão.
+      </div>
+    </details>
+
+    <details>
+      <summary>E se eu não gostar?</summary>
+      <div class="body">
+        Você tem 7 dias para pedir o reembolso integral, conforme o direito de arrependimento do
+        Código de Defesa do Consumidor. Basta solicitar pelo e-mail de suporte. Sem justificativa
+        e sem burocracia.
+      </div>
+    </details>
+  </div>
+</section>
+
+<!-- ══════════ OFERTA ══════════ -->
+<section class="offer" id="comprar">
+  <div class="wrap">
+    <h2>Leve o pacote completo</h2>
+    <p class="intro">Uma planilha de trabalho e sete guias práticos, prontos para usar hoje.</p>
+
+    <div class="pricebox">
+      <div class="was">De R$ 147,00</div>
+      <div class="now"><small>R$</small>69,90</div>
+      <div class="terms">à vista no Pix ou parcelado no cartão</div>
+    </div>
+
+    <ul class="manifest">
+      <li>Planilha de Controle Financeiro — ano inteiro, 9 abas</li>
+      <li>Guia 01 — Comprovar renda e conseguir crédito</li>
+      <li>Guia 02 — Limpa nome e sobe score</li>
+      <li>Guia 03 — Lucro real e uso do crédito</li>
+      <li>Guia 04 — Mapa para sair da negativação</li>
+      <li>Guia 05 — Move Brasil, financiamento de carro</li>
+      <li>Guia 06 — INSS, direitos e aposentadoria</li>
+      <li>Guia 07 — Imposto de Renda e investimentos</li>
+      <li>Acesso imediato após a confirmação do pagamento</li>
+    </ul>
+
+    <a href="https://pay.kiwify.com.br/V6TpzGD" class="cta">Comprar agora por R$ 69,90</a>
+    <div class="cta-note">Pagamento processado pela Kiwify · Acesso liberado na hora</div>
+  </div>
+</section>
+
+<!-- ══════════ GARANTIA ══════════ -->
+<section>
+  <div class="wrap">
+    <div class="guarantee">
+      <h3>Garantia incondicional de 7 dias</h3>
+      <p>
+        Você tem 7 dias corridos a partir da compra para analisar todo o material. Se concluir que não
+        é para você, peça o reembolso pelo e-mail de suporte e devolvemos 100% do valor.
+        Sem pergunta, sem constrangimento.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA FINAL ══════════ -->
+<section class="wash" style="text-align:center">
+  <div class="wrap">
+    <h2 style="max-width:560px;margin:0 auto 14px">Você pode continuar tentando do jeito que não está funcionando.</h2>
+    <p class="lead" style="max-width:520px;margin:0 auto 26px">
+      Ou pode passar as próximas duas horas organizando a sua renda do jeito
+      que o banco entende — e parar de ouvir que você não tem como comprovar
+      o que ganha rodando 12 horas por dia.
+    </p>
+    <a href="https://pay.kiwify.com.br/V6TpzGD" class="cta">Quero o pacote por R$ 69,90</a>
+    <p style="margin-top:16px;font-size:13.5px;color:#7A8794">
+      Acesso imediato · Garantia de 7 dias · Suporte por e-mail
+    </p>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer>
+  <div class="wrap">
+    <div class="brand">MOTORISTA NO LUCRO</div>
+    <p style="color:#8C99A6;font-size:13.5px;margin-bottom:4px">Pacote Finanças para Motorista de Aplicativo</p>
+    <p style="color:#8C99A6;font-size:13px;margin-bottom:0">
+      Material informativo e educacional em formato digital · Versão de agosto de 2026
+    </p>
+
+    <div class="legal">
+      <p style="color:#6E7A87;font-size:11.5px;margin-bottom:10px">
+        Vendido por Motorista no Lucro · Contato: contato.motoristanolucro@gmail.com ·
+        Processamento de pagamento e entrega por Kiwify.
+      </p>
+      <p style="color:#6E7A87;font-size:11.5px;margin:0">
+        Este produto é material informativo e educacional. <strong style="color:#8C99A6">Não constitui
+        consultoria contábil, jurídica, previdenciária ou de investimentos e não garante aprovação de
+        crédito, financiamento, acordo ou qualquer resultado financeiro.</strong> Os resultados dependem
+        da situação individual de cada pessoa, da análise de cada instituição e da execução do método.
+        Regras tributárias, programas de governo, valores e taxas mudam ao longo do tempo: confirme
+        sempre nos canais oficiais antes de decidir. Para a sua situação específica, procure um
+        contador, advogado ou profissional certificado. Conteúdo protegido por direitos autorais —
+        © 2026 Motorista no Lucro. A compra concede licença de uso pessoal e intransferível, vedada a revenda ou redistribuição. Obra protegida pela Lei 9.610/1998.
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
